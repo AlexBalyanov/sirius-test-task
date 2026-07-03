@@ -25,8 +25,6 @@ const App = () => {
     });
   };
 
-  console.log(selectedIds);
-
   return (
     <main className={styles.container}>
       <ChipList
