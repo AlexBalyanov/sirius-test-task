@@ -8,7 +8,7 @@ const chipsListData: TChipListItem[] = Array.from(
   { length: 30 },
   (_, index) => ({
     id: String(index),
-    label: `Чипс-${index}`,
+    label: `Чипс ${index + 1}`,
   }),
 );
 

@@ -2,6 +2,13 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  font-family:
+    Inter,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
 }
 
 body {
