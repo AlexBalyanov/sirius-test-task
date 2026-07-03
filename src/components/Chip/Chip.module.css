@@ -1,0 +1,11 @@
+.chip {
+  padding-block: 10px;
+  padding-inline: 20px;
+  background-color: lightgrey;
+  border: none;
+  border-radius: 30px;
+}
+
+.selected {
+  background-color: aquamarine;
+}
