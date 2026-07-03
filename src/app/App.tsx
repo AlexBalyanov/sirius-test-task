@@ -1,18 +1,28 @@
-import Chip from "../components/Chip/Chip.tsx";
 import styles from "./App.module.css";
+import { useState } from "react";
+import ChipList, {
+  type TChipListItem,
+} from "../components/ChipList/ChipList.tsx";
+
+const chipsListData: TChipListItem[] = Array.from(
+  { length: 30 },
+  (_, index) => ({
+    id: String(index),
+    label: `Чипс-${index}`,
+  }),
+);
 
 const App = () => {
-  const chipsList = new Array(30).fill("");
+  const [selectedId, setSelectedId] = useState<string>();
+  console.log(selectedId);
 
   return (
-    <main>
-      <ul className={styles.container}>
-        {chipsList.map((_, index) => (
-          <li>
-            <Chip>{`Чипс-${index}`}</Chip>
-          </li>
-        ))}
-      </ul>
+    <main className={styles.container}>
+      <ChipList
+        items={chipsListData}
+        selectedId={selectedId}
+        onSelect={setSelectedId}
+      />
     </main>
   );
 };
