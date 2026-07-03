@@ -13,15 +13,26 @@ const chipsListData: TChipListItem[] = Array.from(
 );
 
 const App = () => {
-  const [selectedId, setSelectedId] = useState<string>();
-  console.log(selectedId);
+  const [selectedIds, setSelectedIds] = useState<string[]>([]);
+
+  const handleSelect = (id: string) => {
+    setSelectedIds((currentIds) => {
+      if (currentIds.includes(id)) {
+        return currentIds.filter((currentId) => currentId !== id);
+      }
+
+      return [...currentIds, id];
+    });
+  };
+
+  console.log(selectedIds);
 
   return (
     <main className={styles.container}>
       <ChipList
         items={chipsListData}
-        selectedId={selectedId}
-        onSelect={setSelectedId}
+        selectedIds={selectedIds}
+        onSelect={handleSelect}
       />
     </main>
   );

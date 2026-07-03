@@ -8,19 +8,19 @@ export type TChipListItem = {
 
 type TChipListProps = {
   items: TChipListItem[];
-  selectedId?: string;
+  selectedIds?: string[];
   onSelect: (id: string) => void;
 };
 
 const ChipList = (props: TChipListProps) => {
-  const { items, selectedId, onSelect } = props;
+  const { items, selectedIds, onSelect } = props;
 
   return (
     <ul className={styles.list}>
       {items.map((item) => (
         <li key={item.id} className={styles.item}>
           <Chip
-            selected={item.id === selectedId}
+            selected={selectedIds?.includes(item.id)}
             onClick={() => onSelect(item.id)}
           >
             {item.label}
