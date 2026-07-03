@@ -6,6 +6,32 @@
   list-style: none;
 }
 
-.item {
+.item, .moreItem {
   flex: 0 0 auto;
+}
+
+.moreButton {
+  padding-block: 10px;
+  padding-inline: 20px;
+  background-color: lightgrey;
+  border: none;
+  border-radius: 30px;
+}
+
+.popup {
+  padding: 8px;
+  border: 1px solid #e9d5ff;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 12px 24px rgb(0 0 0 / 12%);
+}
+
+.popupList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  max-width: 450px;
+  list-style: none;
 }

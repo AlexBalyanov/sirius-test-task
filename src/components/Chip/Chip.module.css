@@ -1,4 +1,5 @@
 .chip {
+  min-width: 100px;
   padding-block: 10px;
   padding-inline: 20px;
   background-color: lightgrey;
