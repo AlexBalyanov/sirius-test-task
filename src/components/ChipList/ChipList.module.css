@@ -1,6 +1,9 @@
 .container {
   position: relative;
   width: 100%;
+  padding: 30px;
+  border-radius: 30px;
+  background: #a3acac;
 }
 
 .list {
@@ -22,9 +25,10 @@
 }
 
 .moreButton {
-  padding-block: 10px;
-  padding-inline: 20px;
-  background-color: lightgrey;
+  padding-block: 15px;
+  padding-inline: 25px;
+  background-color: #eaeaea;
+  color: #707070;
   border: none;
   border-radius: 30px;
 }
@@ -32,7 +36,7 @@
 .popup {
   max-width: 450px;
   padding: 8px;
-  border: 1px solid #e9d5ff;
+  border: 1px solid #c2c2c2;
   border-radius: 10px;
   background-color: white;
   box-shadow: 0 12px 24px rgb(0 0 0 / 12%);
