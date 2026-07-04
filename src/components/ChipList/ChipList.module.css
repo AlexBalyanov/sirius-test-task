@@ -32,11 +32,14 @@
   color: #707070;
   border: none;
   border-radius: 30px;
+  box-shadow: 0 0 0 rgb(0 0 0 / 0%);
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    box-shadow 0.2s ease-out;
 
   &:hover {
     box-shadow: 5px 5px 5px rgb(0 0 0 / 15%);
-    transition: box-shadow;
-    transition-duration: 0.3s;
   }
 }
 
