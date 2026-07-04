@@ -23,6 +23,9 @@
 
 `@radix-ui/react-popover` используется только для попапа.
 
+## Деплой проекта
+https://sirius-test-task-phi.vercel.app/
+
 ## Запуск проекта
 
 Установить зависимости:
