@@ -1,0 +1,78 @@
+.container {
+  position: relative;
+  width: 100%;
+  padding: 30px;
+  border-radius: 15px;
+  background: #aba0e0;
+  box-shadow: 0 12px 24px rgb(0 0 0 / 20%);
+}
+
+.list {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.list,
+.measureList {
+  display: flex;
+  gap: 20px;
+}
+
+.item,
+.moreItem {
+  flex: 0 0 auto;
+}
+
+.moreButton {
+  padding-block: 15px;
+  padding-inline: 25px;
+  background-color: #eaeaea;
+  color: #707070;
+  border: none;
+  border-radius: 30px;
+
+  &:hover {
+    box-shadow: 5px 5px 5px rgb(0 0 0 / 15%);
+    transition: box-shadow;
+    transition-duration: 0.3s;
+  }
+}
+
+.popup {
+  max-width: min(450px, var(--radix-popover-content-available-width));
+  max-height: min(360px, var(--radix-popover-content-available-height));
+  padding-block: 15px;
+  padding-inline: 10px;
+  border: 1px solid #c2c2c2;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 12px 24px rgb(0 0 0 / 12%);
+
+  overflow: auto;
+}
+
+.popupList {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 10px;
+  column-gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.measureList {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: max-content;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  pointer-events: none;
+  visibility: hidden;
+  list-style: none;
+}
