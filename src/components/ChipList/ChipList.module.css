@@ -2,8 +2,9 @@
   position: relative;
   width: 100%;
   padding: 30px;
-  border-radius: 30px;
-  background: #a3acac;
+  border-radius: 15px;
+  background: #aba0e0;
+  box-shadow: 0 12px 24px rgb(0 0 0 / 20%);
 }
 
 .list {
@@ -31,21 +32,32 @@
   color: #707070;
   border: none;
   border-radius: 30px;
+
+  &:hover {
+    box-shadow: 5px 5px 5px rgb(0 0 0 / 15%);
+    transition: box-shadow;
+    transition-duration: 0.3s;
+  }
 }
 
 .popup {
-  max-width: 450px;
-  padding: 8px;
+  max-width: min(450px, var(--radix-popover-content-available-width));
+  max-height: min(360px, var(--radix-popover-content-available-height));
+  padding-block: 15px;
+  padding-inline: 10px;
   border: 1px solid #c2c2c2;
   border-radius: 10px;
   background-color: white;
   box-shadow: 0 12px 24px rgb(0 0 0 / 12%);
+
+  overflow: auto;
 }
 
 .popupList {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  row-gap: 10px;
+  column-gap: 8px;
   margin: 0;
   padding: 0;
   list-style: none;
